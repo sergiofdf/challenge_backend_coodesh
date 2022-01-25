@@ -5,7 +5,7 @@ O objetivo do desafio é construir uma API Restful com as melhores práticas de 
 
 
 Conceitos abordados:
-- Utilizado MongoDB para registro dos artigos baixados/sincronizados com a API API Space Flight News;
+- Utilizado MongoDB para registro dos artigos baixados/sincronizados com a API Space Flight News;
 - Criação de rotas (CRUD) para buscar, criar, atualizar e deletar artigos;
 - Desenvolvido script para armazenar artigos da API no banco de dados;
 - Criada função CRON para rodar o script de sincronização do banco de dados diariamente às 9h;
