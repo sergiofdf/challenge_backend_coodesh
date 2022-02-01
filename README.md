@@ -12,8 +12,11 @@ Conceitos abordados:
 - Configurado ambiente Docker para execução do projeto;
 - Criado sistema de simulação de alerta via email em caso de falha na execução do script de sincronização dos artigos;
 - Elaborado documentação da API utilizando o conceito de Open API 3.0;
+
+<br>
 Em andamento:
-[ ] Escrever Unit Tests para os endpoints da API.
+
+[  ] Escrever Unit Tests para os endpoints da API.
 
 ---
 
