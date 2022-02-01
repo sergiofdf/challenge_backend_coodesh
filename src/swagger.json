@@ -1,0 +1,179 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Space Flight API",
+    "description": "API to consume the news listed by https://api.spaceflightnewsapi.net/v3/documentation",
+    "version": "1.0.0",
+    "contact": {
+      "email": "sergiofdf@gmail.com"
+    }
+  },
+  "paths":{
+    "/articles":{
+      "get":{
+        "tags": ["Articles"],
+        "summary": "Get list of articles",
+        "description": "Get the updated list of articles related to space flight news.",
+        "responses":{
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description":"Erro no acesso ao banco de dados. Tente novamente após um momento!"
+          }
+        }
+      },
+      "post":{
+        "tags": ["Articles"],
+        "summary": "Create a new article",
+        "description": "Create new article with some news related to space flights.",
+        "requestBody":{
+          "content":{
+            "application/json":{
+              "schema":{
+                "$ref": "#/definitions/Article"
+              }
+            }
+          }
+        },
+        "responses":{
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Campo obrigatório não preenchido: título, url, imageUrl, newsSite ou publishedAt!"
+          }
+        }
+      }
+    },
+    "/articles/{id}":{
+      "get":{
+        "tags": ["Articles"],
+        "summary": "Get specific article by ID",
+        "description": "Filter some specific article by entering its ID in the URL.",
+        "parameters":[
+          {
+            "name":"id",
+            "in": "path",
+            "description": "Article id",
+            "required": true,
+            "schema":{
+              "type": "string"
+            }
+          }
+        ],
+        "responses":{
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description":"Não foi encontrado artigo cadastrado com o ID informado!"
+          }
+        }
+      },
+      "put":{
+        "tags": ["Articles"],
+        "summary": "Update an existing article",
+        "description": "Update informations about some specific Article, referenced by ID.",
+        "parameters":[
+          {
+            "name":"id",
+            "in": "path",
+            "description": "Article id",
+            "required": true,
+            "schema":{
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody":{
+          "content":{
+            "application/json":{
+              "schema":{
+                "$ref": "#/definitions/Article"
+              }
+            }
+          }
+        },
+        "responses":{
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete":{
+        "tags": ["Articles"],
+        "summary": "Delete an existing article",
+        "description": "Delete an Article referenced by ID.",
+        "parameters":[
+          {
+            "name":"id",
+            "in": "path",
+            "description": "Article id",
+            "required": true,
+            "schema":{
+              "type": "string"
+            }
+          }
+        ],
+        "responses":{
+          "204": {
+            "description": "No Content"
+          },
+          "404": {
+            "description": "Não foi possível apagar o artigo, pois não foi encontrado nenhum com o ID informado!"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Article":{
+      "type":"object",
+      "properties":{
+        "featured":{
+          "type": "boolean"
+        },
+        "title":{
+          "type": "string"
+        },
+        "url":{
+          "type": "string"
+        },
+        "imageUrl":{
+          "type": "string"
+        },
+        "newsSite":{
+          "type": "string"
+        },
+        "summary":{
+          "type": "string"
+        },
+        "publishedAt":{
+          "type": "string"
+        },
+        "updatedAt":{
+          "type": "string"
+        },
+        "launches":{
+          "type": "array",
+          "id": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "string"
+          }
+        },
+        "events":{
+          "type": "array",
+          "id": {
+            "type": "string"
+          },
+          "provider": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

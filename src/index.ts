@@ -1,19 +1,24 @@
 import express, { NextFunction, Request, Response } from "express";
 import "express-async-errors";
 import nodeSchedule from "node-schedule";
+import swaggerUi from "swagger-ui-express";
 
 import { AppError } from "./App/middlewares/AppError";
 import cors from "./App/middlewares/cors";
 import getArticlesUpdatedList from "./database/dailyDbUpdate";
 import { router as routes } from "./routes";
+import swaggerFile from "./swagger.json";
 
-const job = nodeSchedule.scheduleJob("0 12 * * * ", () => {
+// Considerado UTC - 3 horas
+const job = nodeSchedule.scheduleJob("20 0 * * * ", () => {
   getArticlesUpdatedList();
 });
 
 const app = express();
 
 app.use(express.json());
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.use(cors);
 app.use(routes);

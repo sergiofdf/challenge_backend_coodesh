@@ -11,14 +11,13 @@ Conceitos abordados:
 - Criada função CRON para rodar o script de sincronização do banco de dados diariamente às 9h;
 - Configurado ambiente Docker para execução do projeto;
 - Criado sistema de simulação de alerta via email em caso de falha na execução do script de sincronização dos artigos;
-
+- Elaborado documentação da API utilizando o conceito de Open API 3.0;
 Em andamento:
-[ ] Elaborar documentação da API utilizando o conceito de Open API 3.0;
 [ ] Escrever Unit Tests para os endpoints da API.
 
 ---
 
-Como executar o projeto:
+## 🚀 Como executar o projeto:
 1. Faça um clone do repositório:
 
 `git clone https://github.com/sergiofdf/challenge_backend_coodesh.git`
@@ -32,8 +31,15 @@ Como executar o projeto:
 `docker-compose up`
 
 ---
+## 📘 Documentação da API (Open API - Swagger)
 
-Ferramentas/frameworks utilizados no desenvolvimento:
+Após executar o projeto, carregue sua documentação e utilize/teste a API através da documentação feita com o swagger:
+
+> http://localhost:3001/api-docs/#/
+
+---
+
+## 🛠 Ferramentas/frameworks utilizados no desenvolvimento:
 
 
  ![](https://img.shields.io/badge/Typescript-4.5.5-blue)
@@ -59,7 +65,7 @@ Ferramentas/frameworks utilizados no desenvolvimento:
 
  ---
 
-## Rotas criadas
+## 🗺 Rotas criadas
 
 - [GET]/:  Retorna um Status: 200 e uma Mensagem "Back-end Challenge 2021 🏅 - Space Flight News"
 
@@ -77,5 +83,19 @@ Ferramentas/frameworks utilizados no desenvolvimento:
 
 ---
 
+## 🔥 Ilustrando a documentação e testes com o Swagger
+![API_documentation1](https://user-images.githubusercontent.com/84455399/151901665-925ea07f-e509-4fef-9745-00b3d8f4a71e.png)
+
+![API_documentation2](https://user-images.githubusercontent.com/84455399/151901669-46a9cd9b-67f9-4cab-bf0f-198abefb9b41.png)
+
+![API_documentation3](https://user-images.githubusercontent.com/84455399/151901671-95a90a03-9fb3-4de7-9790-d73b1d02f217.png)
+
+![API_documentation4](https://user-images.githubusercontent.com/84455399/151901675-56185b43-a003-4b0f-badc-3bedbcbc7a66.png)
+
+![API_documentation5](https://user-images.githubusercontent.com/84455399/151901676-6ee04c26-4f2d-4136-8974-4454965ddf86.png)
+
+![API_documentation6](https://user-images.githubusercontent.com/84455399/151901679-e91182eb-16ef-4f25-bc23-cce8b2e4f8f1.png)
+
+---
 > This is a challenge by Coodesh
 > https://lab.coodesh.com/public-challenges/back-end-challenge-2021

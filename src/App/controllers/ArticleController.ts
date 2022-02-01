@@ -29,7 +29,7 @@ class ArticleController {
 
     if (article.length < 1) {
       throw new AppError(
-        "Não encontrado artigo cadastrado com o ID informado!",
+        "Não foi encontrado artigo cadastrado com o ID informado!",
         404
       );
     }
