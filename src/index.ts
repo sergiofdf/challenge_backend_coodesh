@@ -9,8 +9,8 @@ import getArticlesUpdatedList from "./database/dailyDbUpdate";
 import { router as routes } from "./routes";
 import swaggerFile from "./swagger.json";
 
-// Considerado UTC - 3 horas
-const job = nodeSchedule.scheduleJob("20 0 * * * ", () => {
+// Considerado UTC - 3 horas para horário de Brasília: 9am = 12 UTC
+const job = nodeSchedule.scheduleJob("0 12 * * * ", () => {
   getArticlesUpdatedList();
 });
 
