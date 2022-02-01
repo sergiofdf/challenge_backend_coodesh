@@ -63,7 +63,7 @@ Após executar o projeto, carregue sua documentação e utilize/teste a API atra
 
  ![](https://img.shields.io/badge/Swagger-6.7.2-green)
 
- ![https://www.npmjs.com/package/eslint/v/8.7.0](https://img.shields.io/badge/Eslint-8.7.0-yellow)
+  [![](https://img.shields.io/badge/Eslint-8.7.0-yellow)](https://www.npmjs.com/package/eslint/v/8.7.0)
 
 
  ---
