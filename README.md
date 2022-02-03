@@ -17,6 +17,8 @@ Conceitos abordados:
 Em andamento:
 
 [  ] Escrever Unit Tests para os endpoints da API.
+<br>
+Escrito testes das rotas do tipo GET.
 
 ---
 
