@@ -36,6 +36,13 @@ Escrito testes das rotas do tipo GET.
 `docker-compose up`
 
 ---
+## 🚀 Como rodar testes dos End-Points:
+1. Executar as etapas para execução do projeto apresentadas acima.
+
+2. Exectuar o seguinte comando para iniciar testes:
+`yarn test`
+
+---
 ## 📘 Documentação da API (Open API - Swagger)
 
 Após executar o projeto, carregue sua documentação e utilize/teste a API através da documentação feita com o swagger:
@@ -46,28 +53,29 @@ Após executar o projeto, carregue sua documentação e utilize/teste a API atra
 
 ## 🛠 Ferramentas/frameworks utilizados no desenvolvimento:
 
-
- [![](https://img.shields.io/badge/Typescript-4.5.5-blue)](https://www.npmjs.com/package/typescript/v/4.5.5)
-
  [![](https://img.shields.io/badge/Node-14.17.2-green)](https://nodejs.dev/download)
 
  [![](https://img.shields.io/badge/Express-4.17.2-yellow)](https://www.npmjs.com/package/express/v/4.17.2)
 
+ [![](https://img.shields.io/badge/Typescript-4.5.5-blue)](https://www.npmjs.com/package/typescript/v/4.5.5)
+
  [![](https://img.shields.io/badge/MongoDB-4.4.11-green)](https://www.mongodb.com/)
 
- [![](https://img.shields.io/badge/Jest-27.4.7-blue)](https://www.npmjs.com/package/jest/v/27.4.7)
-
  [![](https://img.shields.io/badge/Mongoose-6.1.7-red)](https://www.npmjs.com/package/mongoose/v/6.1.7)
+
+  [![](https://img.shields.io/badge/SwaggerUiExpress-4.3.0-green)](https://www.npmjs.com/package/swagger-ui-express/v/4.3.0)
+
+[![](https://img.shields.io/badge/Jest-27.4.7-blue)](https://www.npmjs.com/package/jest/v/27.4.7)
+
+ [![](https://img.shields.io/badge/Supertest-6.2.2-yellow)](https://www.npmjs.com/package/supertest/v/6.2.2)
 
  [![](https://img.shields.io/badge/NodeSchedule-2.1.0-orange)](https://www.npmjs.com/package/node-schedule/v/2.1.0)
 
  [![](https://img.shields.io/badge/NodeMailer-6.7.2-purple)](https://www.npmjs.com/package/nodemailer/v/6.7.2)
 
- [![](https://img.shields.io/badge/SwaggerUiExpress-4.3.0-green)](https://www.npmjs.com/package/swagger-ui-express/v/4.3.0)
 
  [![](https://img.shields.io/badge/Eslint-8.7.0-yellow)](https://www.npmjs.com/package/eslint/v/8.7.0)
 
- [![](https://img.shields.io/badge/Eslint-8.7.0-yellow)](https://www.npmjs.com/package/eslint/v/8.7.0)
 
  ---
 
